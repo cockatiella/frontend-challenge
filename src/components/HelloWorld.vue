@@ -10,6 +10,8 @@ interface User {
   location: string;
   gender: string;
   picture: string;
+  phone: string;
+
 }
 
 const username = ref('');
@@ -177,6 +179,7 @@ function closeUserDetails() {
               <div class="user-contact">
                 <span class="label">Contact: </span>
                 <p>{{ selectedUser.email }}</p>
+                <p>Phone: {{ selectedUser.phone }}</p>
               </div>
             </div>
           </div>
